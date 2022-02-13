@@ -722,13 +722,144 @@ advisory point of view and tries to mitigate these attacks. This conceptual tree
 (Ingols et al., 2009). The tree enumerates attacks on the design and captures 
 interdependencies between attacks. In a tree representation, the attacker's goal is 
 the root (the network), and the nodes are meant to help him achieve this goal.</p>
-<p><ul><b>These Attacks are classified into three</b>
+<p><h4><b>These Attacks are classified into three</p></h4></b>
  <p><li> Client - the application that makes use of services provided by the server
   <li>Server – the database
     <li> Network- the infrastructure for bidirectional communication between the clients 
 and the server.</p>
 The attacker's goal is to compromise the network by compromising the client and the 
 server</ul>
+<p><h4><b>COMPROMISING THE CLIENT INVOLVES </p></h4></b>
+<p><h4><b>Shoulder surfing</h4></b> This is when an intruder tries using social engineering by spying 
+on the victim to get his credentials through visual hacking (McGinnis, 2017).
+<p><h4><b>User unattended logging on</h4></b> sessions timeout should be implemented to mitigate 
+this threat. In addition, screen shields should be placed between patients and 
+receptionists to avoid shoulder surfing.
+<p><h4><b>Obtain a valid username/password</h4></b> obtaining a username and password through 
+social engineering or reconnaissance is a threat to the web appointment scheduling 
+application. Credentials should be encrypted when stored in use or transit, and 
+strong authentication measures like two factor or multi-factor authentication should 
+be implemented to authenticate users to the system.
+<p><h4><b>Social engineering</h4></b> This is one of the methods threat actors use to access the 
+network, like phishing attempts on accounts, tailgating, and shoulder surfing. 
+Therefore, users should be educated on social engineering activities and report any 
+suspicious activities to the administrators or authorities. 
+<p><h4><b>A network interception attack</h4></b> occurs when a threat actor eavesdrops on the 
+network, intercepting and gathering information so that he can gain access. This is 
+prevented by encrypting data stored or used in transit.
+<p><h4><b>Keylogging
+</h4></b> this is a programme that records keystrokes from keyboards and other 
+inputs such as mouse movement and touchscreen inputs for the attacker to analyse 
+the user's information (Chapple and Seidl, 2021).
+<p><h4><b>Phishing emails
+</h4></b> using emails to steal user identity online. A victim receives an 
+email that seems to come from a bank or a financial institution. The email links to a 
+website where the user is asked to provide account details. These credentials are 
+then harvested by the threat actor and used for malicious purposes like 
+compromising the web appointment scheduling application (Lininger and Vines, 
+2005).
+Infect with malware; Infecting the system with malicious code that disrupts the 
+proper functioning of the scheduling system or tries to steal sensitive or personal 
+information from the system.
+13
+Deliver malware through email attachments; most malware is delivered through 
+email attachments like phishing campaigns in the form of embedded URLs. When 
+clicked on by the user, this malware is then downloaded to the network. The 
+malware then sits on the network and exploits or exfiltrates information to the threat 
+actor.
+Gain local access; Obtain administrator username/password; when a user is 
+compromised, the threat actors will then move laterally to gaining privilege access to 
+the network to obtain administrators credentials and then gaining access to the 
+server.
+Steal client Devicessmartphones); since most times users can use their mobile 
+devices to access the application, there is the vulnerability that their device can be 
+stolen, and an attacker gets hold of their credentials to infiltrate the network.
+2. COMPROMISING THE SERVER INVOLVES
+These are attacks that a threat actor perpetuates against a server to infiltrate the 
+server and compromise the network. These attacks are
+Gain remote access: An attacker who does not have access to the machine being 
+targeted uses remote exploitation techniques to exploit a product or a component of 
+a product. Antivirus software can be targeted remotely also.
+Use default username/password; Default accounts and passwords are widely used 
+and risky. Most attacks begin with the enumeration of the valid system and user 
+identities, which is required to identify vulnerabilities to try and exploit. If a system's 
+14
+username and password are already known, the attacker—whether an external 
+entity or an inside user—can quickly and easily log in, frequently with administrative 
+capabilities, because most default accounts are created for the initial setup and 
+configuration of other user accounts. The system is now highly susceptible and at 
+risk, regardless of its security (Williams, Milroy, and Knapp, 2011).
+Flood with traffic: flooding the application with too many requests at the same time 
+will cause a denial of service to legitimate users on the network.
+Flood with requests: will also lead to denial of service to legitimate users causing 
+the server to be unavailable.
+Other methods to compromise a server include.
+Use exploit, find an open port, identify working exploit, gain local access, gain
+physical access, obtain administrator username/password, Gain physical access.
+Use a suitable tool, Destroy, or steal the server, Make the server slow or unavailable,
+denial of service or distributed denial of service attack on the server.
+3. COMPROMISING THE NETWORK INVOLVES
+Eavesdrop traffic
+Capture packets
+Decode traffic
+Modify or inject traffic
+15
+Perform man-in-the-middle attack
+Perform a replay attack
+Make the network unavailable
+Cut network cables
+Destroy wireless access points
+PREVENTION AND MITIGATIVE MEASURES AGAINST THESE ATTACKS 
+The following is a list of potential mitigation and preventive measures for dealing with 
+the identified attacks.
+1. Authentication: To use a client, users must be authenticated. As a standard practice, 
+a strong password policy and multifactor authentication should grant access to 
+network users.
+2. User Authorisation: Access policies based on roles should be created.
+3. Principles such as least privileges and separation of duties must be implemented.
+4. Users who have been granted access, roles with the bare minimum of privileges 
+should be assigned to prevent privilege escalation if their accounts are 
+compromised.
+5. Auditing: Every action must be documented and accounted for.
+16
+6. Malware Detection: Different varieties of malware can affect clients. As a result, 
+malware detection programmes should be installed and updated regularly.
+7. Logout Policy: A client should be logged out after a period of inactivity.
+8. Access Revocation Policy: It is quite easy to steal portable clients. As a result, there 
+should be a way to disable their access to the system.
+9. Security for servers should involve implementing defence-in-depth measures, such as 
+firewalls, intrusion prevention systems, and intrusion detection systems.
+10. Physical security prevents intruders from removing databases by protecting the 
+servers.
+11. Encryption: Network assaults can be significantly mitigated by encrypting all 
+communications in transit, in use, and in storage using appropriate cryptographic 
+protocols like TLS/SSL.
+12. Security Awareness (Education): All authorised users (Administrators) must 
+complete a security awareness programme. They should learn about attacks, 
+consequences, and best practices in this system.
+CONCLUSION
+The Queen's Medical Centre receptionist spends most of their time answering 
+phones, explaining options to patients, and managing schedules, all of which can be 
+automated. In the same way, the patient enjoys the time-saving advantages. 
+Patients who wish to make an appointment with the centre do not need to take time 
+out of their busy schedules to call. Patients will be able to access services faster if 
+17
+they use the web-based appointment scheduling information management system, 
+which is also a great way to provide same-day or next-day medical services if 
+desired and if a doctor's schedule allows it, patients can easily schedule last-minute 
+appointments (Collective, 2019). The web-based application and scheduling 
+information management system also perform vital functions as;
+Can process the information imputed and cope with the volume of data processed 
+during appointment scheduling.
+The system Protect the integrity of the information stored and electronically protect
+health information, as passwords and personal information are encrypted and stored 
+safely.
+Different system access levels are assigned; this safeguards the system against 
+unauthorised alterations to its functions.
+As Auditing is one of the security measures implemented during the design, it is 
+used to determine who entered or altered the information. This is crucial since it logs 
+all changes to the system and shows who made them and when they happened; it 
+also complies with the HIPAA security requirement.
         </details>
 
       </div>
