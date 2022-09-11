@@ -346,6 +346,84 @@
                             </div>
                             <div class="">
                             </div>
+                            <hr>
+                            <button type="button" class="collapsible sub-collapsible sub-button">
+                              <li>
+                                <h4> COLLABORATIVE DISCUSSION 1: UML FLOWCHART
+                                </h4>
+                              </li>
+                            </button>
+                            <div class="content">
+                            <p>  <h4>Cryptographic Failures</h4></p>
+
+                              <p> Sensitive Data Exposure, as it was known in 2017, is now renamed Cryptographic Failures
+                             and moved from #3 to #2 in 2021 by OWASP, reflecting the increasing importance of
+                             encrypting data in software development.</p>
+                             
+                              <p> Cryptographic failures cover the protection of data in transit and at rest. This
+                             includes passwords, credit card numbers, health records, personal information, 
+                             and other sensitive information.</p>
+                             
+                              <p> Data transmitted in cleartext is one of the main risk factors in the application; 
+                             using HTTP is quick and effective mitigation for this risk where SSL or TLs for
+                             encryption and authentication of the data.</p>
+                             
+                              <p> Tokenization, which refers to substituting a specific secret with a data element 
+                             with a token that stands in for it, is another method for mitigating sensitive 
+                             data exposure.</p>
+                             
+                              <p> A poorly implemented cryptographic system is hard to distinguish from a correctly 
+                             implemented one, and this has led to the exposure of sensitive information in the
+                             past (Pompon, 2016).</p>
+                             
+                              <p> It is especially important for organizations covered by standards like PCI Data 
+                             Security Standards (PCI DSS) or compliance legislation like the General Data 
+                             Protection Regulation (GDPR).</p>
+                             
+                              <p> Even though security by obscurity can provide additional protection (e.g., 
+                             most military organizations do not divulge their cryptographic algorithms), an 
+                             analysis of any cryptographic system always assumes that the algorithm exists.</p>
+                             
+                              <p> Certain kinds of session attacks, such as session fixation and insufficient session
+                             expiration and weakly hashed passwords cryptanalysis attack, are common 
+                             cryptographic attacks (Muthavhine and Sumbwanyambe, 2022)</p>
+                             
+                              <p> The UML diagram below illustrates how a cryptanalysis attack can be prevented</p>
+                              <div class="row">
+                                <center>
+                                  <div class="col-md-12">
+                                    <img class="img-responsive border" alt="" src="assets\img\mod 4 unit 1.jpg"
+                                      ali="center">
+                                 
+                                </center>
+                              </div>
+                              <hr>
+                              <p>
+                                <h4><b>REFERENCE LIST</b></h4>
+                                </p>
+                                <hr>
+                                <p> Infosavvy Security and IT Management Training. (2022). CISSP Understand Methods 
+                                  of Cryptanalytic Attacks | Info-savvy.com. [online] Available at: 
+                                  https://info-savvy.com/cissp-understand-methods-of-cryptanalytic-attacks-bk1d3t9st8/.</p>
+                                  
+                                  
+                                  <p> Learning Center. (n.d.). What is OWASP | What are OWASP Top 10 Vulnerabilities | Imperva. 
+                                  [online] Available at: https://www.imperva.com/learn/application-security/owasp-top-10/
+                                  [Accessed 11 Aug. 2022].</p>
+                                  
+                                  <p> Muthavhine, K.D. and Sumbwanyambe, M. (2022). Preventing Differential Cryptanalysis 
+                                  Attacks Using a KDM Function and the 32-Bit Output S-Boxes on AES Algorithm Found 
+                                  on the Internet of Things Devices. Cryptography, 6(1), p.11. doi:10.3390/cryptography6010011.
+                                  Pompon, R. (2016). IT Security Risk Control Management: An Audit Preparation Plan. [online]
+                                  Google Books. Apress. Available at: 
+                                  https://www.google.co.uk/books/edition/IT_Security_Risk_Control_Management/sIMSDQAAQBAJ?hl=en&gbpv=1&dq=Raymond+Pompon+%C2%B7+2016&printsec=frontcover
+                                  [Accessed 11 Aug. 2022].</p>
+                                  
+                                  
+                                  <p> Wheeler, E. (2011). Security risk management : building an information security
+                                  risk management program from the ground up. Amsterdam ; Waltham, Ma: Syngress.</p>
+                                
+                            </div>
                         <hr>
                       <button type="button" class="collapsible sub-collapsible sub-button">
                         <li>
@@ -353,25 +431,27 @@
                         </li>
                       </button>
                       <div class="content">
-                        <p>In the first week of the information risk management module, we met our tutor,
-                           talked about the upcoming assignments, and began learning about some of the 
-                           fundamentals of risk management in terms of information security.			
-                          The reading for this unit included the first three chapters of the Sutton
-                           book on information risk management from 2021, the Hubbard book on risk management 
-                           failure from 2009, and the NIST risk management guide from 2002. The book by
-                            Hubbard is quite divisive. I don't think it's a bad idea for management teams 
-                            at different companies to use the non-quantitative risk assessment approach. 
-                            Insurance and finance companies, for example, frequently have a large amount 
-                            of pre-existing data that can be used to calculate risk likelihood, impact,
-                             cost, and so on. Small and medium-sized businesses, on the other hand, do not
-                              have access to this information. Risk management must still be performed based 
-                              on the best assumptions, which is why I believe those with low, medium, and high 
-                              qualifications are valuable.		
-                          The NIST publication was also very informative. This document provided very clear and 
-                          informative risk management guidance that less experienced professionals implementing
-                           risk management systems could easily follow. Hopefully, we can put this information 
-                           to use during our team assignments.</p>
-                          
+                                 
+                           
+<p>This week's reading material included an overview of the OWASP Top Ten (Mitre, 2017),
+  the introduction of a new software development methodology - Secure Scrum
+  (Pohl & Hof, 2015), ISO 27000 standards (ISO/IEC, 2018), software design patterns 
+  (Asghar et al, 2019), and an introduction to software development using Python as 
+  well as security considerations the developers must have when using this programming
+  language (Pillai, 2017).</p> 
+  <p>I enjoyed how the authors of the Secure Scrum paper managed
+  to utilise a currently popular software development approach for security-related 
+  issue development work. The paper not only discussed the theoretical benefits of such
+  a methodology but also provided some practical means of implementing it and provided
+  some great examples to further explain their ideas.</p>
+  <p> I found this paper most relevant to my current role . The suggestions made in the 
+  paper on using the security tags to tag the issues in the iteration, which then link to
+   the security vulnerabilities, tracking vulnerabilities.</p>
+  <p>During the Unit 1 we have also been asked to prepare an initial discussion forum post on
+  a chosen OWASP Top 10 vulnerability (Mitre, 2017). The post had to include a Unified 
+  Modelling Language (UML) diagram of our choice to best represent a chosen coding weakness
+  and the steps that led to it occurring.</p>
+  <p>We were assigned to our varios groups this week.</p>
                         </div>
                       </div>
                     </div>
